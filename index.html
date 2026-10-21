@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raphael Malikian — Clinical AI Architect | Portfolio, Ventures & Digital Business Card</title>
+<meta name="description" content="Raphael Malikian — Clinical AI Architect in Los Angeles. Healthcare founder/operator building open-source clinical AI: 134 repos, 213 PRs, 54 merged into external projects. Portfolio, AI ventures hub, blog and digital business card.">
+<meta property="og:title" content="Raphael Malikian — Clinical AI Architect">
+<meta property="og:description" content="Building infrastructure to fix the systemic pain points in healthcare. Open-source clinical AI, Tesla AI series, research — and how to work with me.">
+<meta property="og:image" content="https://rtmalikian.github.io/assets/og.png">
+<meta property="og:url" content="https://rtmalikian.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@rtmalikian">
+<meta name="theme-color" content="#0a0018">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌆</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0a0018; --void2:#12002e; --panel:rgba(24,6,54,.72);
+  --pink:#ff2a6d; --pink2:#ff71ce; --cyan:#05d9e8; --cyan2:#01cdfe;
+  --purple:#b967ff; --yellow:#fffb96; --green:#05ffa1; --ink:#f4f0ff;
+  --muted:#b8aee0; --line:rgba(255,113,206,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--void);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;overflow-x:hidden;line-height:1.6}
+::selection{background:var(--pink);color:#fff}
+a{color:var(--cyan2)}
+/* --- atmosphere --- */
+#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
+.sun{position:fixed;top:6vh;right:-6vw;width:44vw;height:44vw;max-width:560px;max-height:560px;border-radius:50%;z-index:0;pointer-events:none;opacity:.55;
+ background:linear-gradient(180deg,var(--yellow) 0%,#ffb86b 28%,var(--pink) 62%,var(--purple) 100%);
+ -webkit-mask-image:repeating-linear-gradient(180deg,#000 0 26px,transparent 26px 31px);mask-image:repeating-linear-gradient(180deg,#000 0 26px,transparent 26px 31px);
+ filter:blur(.4px) saturate(1.3);animation:sunpulse 9s ease-in-out infinite}
+@keyframes sunpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.gridfloor{position:fixed;left:-25vw;right:-25vw;bottom:-12vh;height:42vh;z-index:0;pointer-events:none;opacity:.5;
+ background:linear-gradient(transparent 0%,rgba(10,0,24,.4) 100%),repeating-linear-gradient(90deg,rgba(5,217,232,.5) 0 2px,transparent 2px 64px),repeating-linear-gradient(0deg,rgba(255,42,109,.45) 0 2px,transparent 2px 34px);
+ transform:perspective(340px) rotateX(62deg);animation:gridmove 3.2s linear infinite}
+@keyframes gridmove{from{background-position:0 0,0 0,0 0}to{background-position:0 0,0 0,0 34px}}
+.scanlines{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.06;background:repeating-linear-gradient(0deg,#000 0 1px,transparent 1px 3px)}
+.vignette{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at 50% 30%,transparent 45%,rgba(5,0,16,.75) 100%)}
+main,header.site,footer{position:relative;z-index:2}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+/* --- nav --- */
+header.site{position:sticky;top:0;backdrop-filter:blur(14px);background:rgba(10,0,24,.72);border-bottom:1px solid var(--line);z-index:50}
+.nav{display:flex;align-items:center;gap:18px;padding:13px 0;flex-wrap:wrap}
+.logo{font-family:Orbitron;font-weight:900;letter-spacing:.12em;font-size:1rem;color:#fff;text-decoration:none}
+.logo span{color:var(--pink2);text-shadow:0 0 12px var(--pink)}
+.nav nav{display:flex;gap:16px;flex-wrap:wrap;margin-left:auto}
+.nav nav a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500}
+.nav nav a:hover{color:var(--cyan);text-shadow:0 0 10px var(--cyan)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.95rem;border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn-pink{background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff;box-shadow:0 0 22px rgba(255,42,109,.45)}
+.btn-pink:hover{transform:translateY(-2px);box-shadow:0 0 34px rgba(255,42,109,.7)}
+.btn-ghost{background:rgba(255,255,255,.04);color:var(--ink);border-color:rgba(5,217,232,.5)}
+.btn-ghost:hover{border-color:var(--cyan);box-shadow:0 0 18px rgba(5,217,232,.35);transform:translateY(-2px)}
+.btn-sm{padding:8px 14px;font-size:.85rem}
+/* --- hero --- */
+.hero{padding:84px 0 40px;text-align:left}
+.kicker{font-family:'JetBrains Mono',monospace;color:var(--green);font-size:.85rem;letter-spacing:.18em;text-transform:uppercase}
+.kicker::before{content:"▸ "}
+h1.glitch{font-family:Orbitron;font-weight:900;font-size:clamp(2.6rem,8vw,5.6rem);line-height:.98;letter-spacing:.01em;margin:14px 0 6px;color:#fff;position:relative;
+ text-shadow:3px 3px 0 rgba(255,42,109,.75),-3px -3px 0 rgba(5,217,232,.75),0 0 44px rgba(185,103,255,.55)}
+h1 .grad{background:linear-gradient(92deg,var(--cyan2),var(--pink2) 55%,var(--yellow));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 18px rgba(255,113,206,.45))}
+.role{font-family:Orbitron;font-size:clamp(1.05rem,3vw,1.7rem);letter-spacing:.28em;color:var(--yellow);text-transform:uppercase;margin:10px 0 18px;text-shadow:0 0 16px rgba(255,251,150,.5)}
+.lede{font-size:1.22rem;color:#e6defc;max-width:760px}
+.lede b{color:#fff}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:34px 0 6px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;backdrop-filter:blur(8px)}
+.stat .n{font-family:Orbitron;font-size:1.9rem;font-weight:900;color:#fff;text-shadow:0 0 14px rgba(5,217,232,.6)}
+.stat .l{font-size:.82rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.ticker{margin:36px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;background:rgba(18,0,46,.6)}
+.ticker div{display:inline-block;padding:9px 0;font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--cyan);animation:tick 36s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* --- sections --- */
+section{padding:64px 0 10px}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px;flex-wrap:wrap}
+.sec-head h2{font-family:Orbitron;font-size:clamp(1.5rem,4vw,2.3rem);font-weight:900;color:#fff;letter-spacing:.04em}
+.sec-head h2 em{font-style:normal;color:var(--pink2);text-shadow:0 0 16px var(--pink)}
+.sec-sub{color:var(--muted);max-width:820px;margin-bottom:26px}
+/* business card */
+.card-scene{perspective:1400px;display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
+@media(max-width:860px){.card-scene{grid-template-columns:1fr}}
+.bizcard{position:relative;border-radius:22px;padding:30px;min-height:320px;transform-style:preserve-3d;transition:transform .25s ease;cursor:pointer;
+ background:linear-gradient(135deg,rgba(255,42,109,.22),rgba(18,0,46,.92) 38%,rgba(5,217,232,.16)),linear-gradient(160deg,#1b053d,#0a0018);
+ border:1px solid rgba(255,255,255,.22);box-shadow:0 24px 70px rgba(0,0,0,.55),0 0 44px rgba(185,103,255,.28);overflow:hidden}
+.bizcard::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.13) 48%,transparent 62%);transform:translateX(-70%);transition:transform .7s;pointer-events:none}
+.bizcard:hover::after{transform:translateX(70%)}
+.bizcard .bc-top{display:flex;justify-content:space-between;gap:12px;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--cyan);letter-spacing:.14em}
+.bizcard h3{font-family:Orbitron;font-size:2rem;color:#fff;margin-top:34px;line-height:1.05}
+.bizcard .bc-role{color:var(--yellow);letter-spacing:.22em;font-size:.85rem;text-transform:uppercase;margin-top:8px}
+.bizcard .bc-lines{margin-top:22px;color:#ddd6ff;font-size:.98rem}
+.bizcard .bc-foot{position:absolute;left:30px;right:30px;bottom:22px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--muted)}
+.chip{display:inline-block;width:52px;height:38px;border-radius:8px;background:linear-gradient(135deg,#ffe95e,#ffb86b);box-shadow:inset 0 0 0 2px rgba(120,70,0,.35);vertical-align:middle}
+.qrpanel{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px;text-align:center;backdrop-filter:blur(8px)}
+.qrpanel img{width:172px;height:172px;border-radius:14px;background:#fff;padding:8px}
+.qrpanel p{color:var(--muted);font-size:.9rem;margin:10px 0 14px}
+.qr-tabs{display:flex;gap:8px;justify-content:center;margin-bottom:14px}
+.qr-tabs button{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer;font-family:inherit;font-weight:600}
+.qr-tabs button.on{background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff;border-color:transparent}
+/* pathways + cards */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.path,.proj,.post,.xcard{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;backdrop-filter:blur(8px);transition:.2s}
+.path:hover,.proj:hover,.post:hover,.xcard:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:0 14px 38px rgba(0,0,0,.4),0 0 22px rgba(5,217,232,.22)}
+.path .ico,.proj .ico{font-size:1.7rem}
+.path h3,.proj h3,.post h3{color:#fff;margin:8px 0 6px;font-size:1.12rem;line-height:1.3}
+.path p,.proj p,.post p,.xcard p{color:var(--muted);font-size:.95rem}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
+.tag{font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:4px 9px;border-radius:999px;border:1px solid rgba(5,217,232,.4);color:var(--cyan)}
+.tag.pk{border-color:rgba(255,113,206,.5);color:var(--pink2)} .tag.yl{border-color:rgba(255,251,150,.5);color:var(--yellow)} .tag.gr{border-color:rgba(5,255,161,.45);color:var(--green)}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-weight:600;font-size:.92rem}
+.links a{text-decoration:none}.links a:hover{text-decoration:underline}
+/* repos */
+.repo-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.repo-tools input{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;padding:10px 16px;color:#fff;min-width:230px;font-family:inherit}
+.chipbtn{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:9px 15px;cursor:pointer;font-family:inherit;font-weight:600}
+.chipbtn.on{background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff;border-color:transparent}
+#repoGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:13px}
+.repo{background:rgba(16,2,40,.78);border:1px solid rgba(185,103,255,.25);border-radius:14px;padding:16px;text-decoration:none;display:block;transition:.18s}
+.repo:hover{border-color:var(--pink2);transform:translateY(-3px)}
+.repo .rn{font-weight:700;color:#fff;word-break:break-word}
+.repo .rd{color:var(--muted);font-size:.86rem;margin:6px 0 10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.repo .rm{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--cyan)}
+/* timeline */
+.tl{border-left:2px solid rgba(255,113,206,.4);margin-left:8px;padding-left:26px;display:grid;gap:20px}
+.tl .ev{position:relative}
+.tl .ev::before{content:"";position:absolute;left:-33px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+.tl .yr{font-family:'JetBrains Mono',monospace;color:var(--pink2);font-size:.82rem;letter-spacing:.1em}
+.tl h3{color:#fff;font-size:1.05rem;margin:2px 0}
+.tl p{color:var(--muted);font-size:.94rem;max-width:840px}
+.skills{display:flex;gap:8px;flex-wrap:wrap}
+.skill{padding:8px 13px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(185,103,255,.35);font-size:.88rem}
+/* blog */
+.blog-tabs{display:flex;gap:9px;margin-bottom:18px;flex-wrap:wrap}
+.post .meta,.xcard .meta{font-family:'JetBrains Mono',monospace;font-size:.76rem;color:var(--green);letter-spacing:.08em}
+.post blockquote{border-left:3px solid var(--pink);padding-left:13px;color:#e9e2ff;margin-top:10px;font-size:.95rem}
+footer{padding:56px 0 70px;margin-top:60px;border-top:1px solid var(--line);background:rgba(8,0,20,.7)}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+footer h4{font-family:Orbitron;color:#fff;margin-bottom:10px;font-size:.95rem;letter-spacing:.08em}
+footer p,footer a{color:var(--muted);font-size:.92rem;text-decoration:none}
+footer a:hover{color:var(--cyan)}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,90px);background:#1b053d;border:1px solid var(--cyan);color:#fff;padding:12px 20px;border-radius:999px;z-index:80;transition:.3s;box-shadow:0 0 26px rgba(5,217,232,.4);font-weight:600}
+.toast.show{transform:translate(-50%,0)}
+.reveal{opacity:0;transform:translateY(18px);transition:.6s ease}.reveal.in{opacity:1;transform:none}
+@media(max-width:640px){.hero{padding-top:52px}.bizcard h3{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas><div class="sun"></div><div class="gridfloor"></div><div class="vignette"></div><div class="scanlines"></div>
+
+<header class="site"><div class="wrap nav">
+  <a class="logo" href="#top">RM<span>://</span>NEON</a>
+  <nav>
+    <a href="#card">Business Card</a><a href="#start">Get Started</a><a href="#ventures">Ventures</a>
+    <a href="#repos">Repositories</a><a href="#resume">Résumé</a><a href="#blog">Blog / X</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-pink btn-sm" href="mailto:rtmalikian@gmail.com?subject=Let%27s%20talk%20—%20via%20rtmalikian.github.io">✉ Work with me</a>
+</div></header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<div class="wrap hero">
+  <div class="kicker">Los Angeles County · Open to collaboration &amp; clinical AI architect roles</div>
+  <h1 class="glitch">RAPHAEL<br><span class="grad">MALIKIAN</span></h1>
+  <div class="role">Clinical AI Architect</div>
+  <p class="lede">Healthcare founder/operator — I bootstrapped and ran a direct primary care clinic as CEO, and now I build <b>open-source clinical AI infrastructure</b> to fix the systemic pain points in healthcare. Over <b>20 years of healthcare domain expertise</b>, shipped as code: products with AI built into the platform itself, not bolted on.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-pink" href="#start">🚀 Get started with me</a>
+    <a class="btn btn-ghost" href="#ventures">🌆 Explore my ventures</a>
+    <button class="btn btn-ghost" onclick="downloadVCard()">⬇ Save my contact (vCard)</button>
+    <button class="btn btn-ghost" onclick="copyEmail(this)">📋 Copy email</button>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="n" data-count="134">0</div><div class="l">Public repositories</div></div>
+    <div class="stat"><div class="n" data-count="41">0</div><div class="l">Original products shipped</div></div>
+    <div class="stat"><div class="n" data-count="213">0</div><div class="l">PRs opened upstream</div></div>
+    <div class="stat"><div class="n" data-count="54">0</div><div class="l">PRs merged externally*</div></div>
+    <div class="stat"><div class="n" data-count="20">0</div><div class="l">Years in healthcare</div></div>
+  </div>
+  <p style="color:var(--muted);font-size:.82rem">*Merged into external projects and verified live on GitHub, Oct 21 2026 — every one reviewed by that project's maintainers. Full record in the <a href="#blog">Field Notes</a>.</p>
+</div>
+<div class="ticker"><div id="tickerTrack"></div></div>
+
+<!-- ============ BUSINESS CARD ============ -->
+<section id="card"><div class="wrap reveal">
+  <div class="sec-head"><h2>THE <em>DIGITAL BUSINESS CARD</em></h2><span class="tag pk">MOVE YOUR CURSOR OVER IT · TAP TO FLIP THE DETAILS</span></div>
+  <p class="sec-sub">This page <i>is</i> my business card. Scan it, save it, send it. The QR on the right drops my full contact straight into your phone — no app, no signup.</p>
+  <div class="card-scene">
+    <div class="bizcard" id="bizcard" title="Click to copy email">
+      <div class="bc-top"><span>◢ CLINICAL_AI // EST. HEALTHCARE × CODE</span><span>LA · CA · 🌐 REMOTE</span></div>
+      <h3>RAPHAEL MALIKIAN</h3>
+      <div class="bc-role">Clinical AI Architect</div>
+      <div class="bc-lines"><span class="chip"></span>&nbsp; Healthcare founder/operator · UCL MBBS · BSc First Class Hons<br>Building open-source AI for patients, providers &amp; the systems between them.</div>
+      <div class="bc-foot"><span>rtmalikian@gmail.com</span><span>github.com/rtmalikian</span><span>x.com/rtmalikian</span></div>
+    </div>
+    <div class="qrpanel">
+      <div class="qr-tabs">
+        <button class="on" data-qr="assets/qr-vcard.png" data-cap="Scan to save my contact — name, email, GitHub, X &amp; LinkedIn in one tap.">📇 Contact</button>
+        <button data-qr="assets/qr-site.png" data-cap="Scan to open this hub — portfolio, ventures, blog and repos.">🌐 This site</button>
+        <button data-qr="assets/qr-github.png" data-cap="Scan to open my GitHub — 134 public repositories.">🐙 GitHub</button>
+      </div>
+      <img id="qrImg" src="assets/qr-vcard.png" alt="QR code">
+      <p id="qrCap">Scan to save my contact — name, email, GitHub, X &amp; LinkedIn in one tap.</p>
+      <div style="display:flex;gap:9px;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-pink btn-sm" onclick="downloadVCard()">⬇ vCard</button>
+        <button class="btn btn-ghost btn-sm" onclick="shareSite()">↗ Share this page</button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ GET STARTED ============ -->
+<section id="start"><div class="wrap reveal">
+  <div class="sec-head"><h2>GET <em>STARTED</em></h2></div>
+  <p class="sec-sub">Three doors, pick yours. Every one lands in my inbox or on my GitHub within a click — I read everything myself.</p>
+  <div class="grid3">
+    <div class="path"><div class="ico">🏥</div><h3>I'm hiring / building clinical AI</h3>
+      <p>You need someone who has run a clinic <i>and</i> ships production AI — evals, safety harnesses, FHIR, OpenAI-compatible platforms that self-host for PHI. That's the whole portfolio below.</p>
+      <div class="links"><a href="mailto:rtmalikian@gmail.com?subject=Clinical%20AI%20role%20—%20let%27s%20talk">Email me →</a><a href="#resume">See résumé snapshot →</a></div></div>
+    <div class="path"><div class="ico">🤝</div><h3>I want to collaborate on open source</h3>
+      <p>I contribute daily to medical AI &amp; vector DB projects and ship a big new open-source product every week. Open an issue, propose a feature, or point me at a bug you need fixed.</p>
+      <div class="links"><a href="https://github.com/rtmalikian" target="_blank" rel="noopener">GitHub profile →</a><a href="#repos">Browse repos →</a></div></div>
+    <div class="path"><div class="ico">💡</div><h3>I have a problem AI should fix</h3>
+      <p>Patient pain point, provider workflow, denial letters, discharge chaos — if it's high-demand and underserved, it's probably already on my build list. Tell me yours.</p>
+      <div class="links"><a href="mailto:rtmalikian@gmail.com?subject=An%20AI%20problem%20worth%20solving">Pitch it →</a><a href="#ventures">See what I've built →</a></div></div>
+  </div>
+</div></section>
+
+<!-- ============ VENTURES ============ -->
+<section id="ventures"><div class="wrap reveal">
+  <div class="sec-head"><h2>AI <em>VENTURES HUB</em></h2></div>
+  <p class="sec-sub">My signature as an architect: every flagship product <b style="color:#fff">embeds its own OpenAI-compatible AI endpoints</b> (<span style="font-family:'JetBrains Mono',monospace;color:var(--cyan)">/v1/chat/completions · /v1/embeddings</span>) with pluggable backends — local Ollama/llama.cpp for PHI-safe self-hosting, or any compatible upstream — plus a deterministic offline fallback. The AI is the platform, not a plugin.</p>
+
+  <h3 style="font-family:Orbitron;color:var(--cyan);letter-spacing:.1em;margin:18px 0 12px">◢ CLINICAL AI — WEEKLY PRODUCT LAUNCHES</h3>
+  <div class="grid3">
+    <div class="proj"><div class="ico">📄➜💬</div><h3>Discharge Decoded</h3><p>Photograph discharge papers → a plain-language care plan: med schedule, red flags, follow-up checklist. Verified extraction (unverified meds are flagged, never presented as fact), a 6th-grade readability gate, and automated teach-back. Week 1 flagship, shipped Oct 19 2026.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag pk">OpenAI-compatible</span><span class="tag gr">Eval harness in CI</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/discharge-decoded" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🛡️</div><h3>Clinical LLM Safety Harness</h3><p>Evaluation &amp; safety harness for clinical LLMs: hallucination detection, citation enforcement, and immediate human-in-the-loop escalation — the guardrails layer healthcare AI is missing.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag pk">LLM evals</span><span class="tag yl">Safety</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/clinical-llm-safety-harness" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🏥</div><h3>AI Medical Clinic + Workflow Skills</h3><p>Agentic medical-office automation: EHR/FHIR utilities, SMART on FHIR workflow skills, and an embedded inference gateway for scheduling, intake and admin — built for small clinics, not just enterprises.</p>
+      <div class="tags"><span class="tag">FHIR R4</span><span class="tag pk">Agents</span><span class="tag gr">Self-hostable</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/ai-medical-clinic" target="_blank" rel="noopener">Clinic →</a><a href="https://github.com/rtmalikian/medical-clinic-ai-workflow-skills" target="_blank" rel="noopener">Skills →</a></div></div>
+    <div class="proj"><div class="ico">🧾</div><h3>ClaimGuard AI</h3><p>Insurance-denial intelligence: predicts denial risk, identifies the cause from the letter, and drafts the appeal — distilled from a Qwen model trained with 10,000 synthetic denial/appeal pairs, human-in-the-loop throughout.</p>
+      <div class="tags"><span class="tag">LLM distillation</span><span class="tag pk">Revenue cycle</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/claimguard-ai-denial-appeals-llm-distillation" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🚭</div><h3>Azat — Quit Smoking, Without Shame</h3><p>Ազատ means “free.” An evidence-based, shame-free quit-smoking PWA in English, Russian and casual Eastern Armenian. No login, no data leaves the phone — built for the Armenian diaspora, designed against fear/shame “boomerang” effects.</p>
+      <div class="tags"><span class="tag">PWA</span><span class="tag yl">EN · RU · ՀԱՅ</span><span class="tag gr">Live demo</span></div>
+      <div class="links"><a href="https://rtmalikian.github.io/azat-smokefree" target="_blank" rel="noopener">Try it live →</a><a href="https://github.com/rtmalikian/azat-smokefree" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🔬</div><h3>Weekly Research Series</h3><p>One research article a week from my open-source clinical AI work — standard layout, data tables, figures, real numbers. Four backlog papers shipped Oct 2026 across clinical NLP, medical imaging, vector databases and FHIR infrastructure, headed to Zenodo, medRxiv and no-fee journals.</p>
+      <div class="tags"><span class="tag">Publications</span><span class="tag pk">Open access</span></div>
+      <div class="links"><a href="#resume">Publication list →</a><a href="#blog">Read the reflections →</a></div></div>
+  </div>
+
+  <h3 style="font-family:Orbitron;color:var(--pink2);letter-spacing:.1em;margin:30px 0 12px">◢ TESLA AI SERIES — ONE APP A DAY</h3>
+  <div class="grid3">
+    <div class="proj"><div class="ico">🚗💬</div><h3>Tesla Fleet Chat</h3><p>Talk to your cars from any OpenAI client. Ask “which car has more battery?” or execute allowlisted commands — my Fleet API work exposed through the same AI-endpoint architecture.</p>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-fleet-chat" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">📍🔋</div><h3>Location Charge Limits + Home Link</h3><p>Per-place charge limits (home 80%, cabin 90% — the Rivian feature Tesla lacks) and a car↔home bridge: ETA-aware thermostat and lights as you approach. Two of 15+ Tesla apps shipped, one per day.</p>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-location-charge-limits" target="_blank" rel="noopener">Limits →</a><a href="https://github.com/rtmalikian/tesla-home-link" target="_blank" rel="noopener">Home Link →</a></div></div>
+    <div class="proj"><div class="ico">🧘</div><h3>Tether</h3><p>macOS menu-bar app for evidence-informed screen wellness: 20-20-20 break overlays, movement breaks, Pomodoro, and privacy-first AI-usage awareness — “sees when, never what you type.”</p>
+      <div class="links"><a href="https://github.com/rtmalikian/tether" target="_blank" rel="noopener">Repo →</a></div></div>
+  </div>
+</div></section>
+
+<!-- ============ REPOS ============ -->
+<section id="repos"><div class="wrap reveal">
+  <div class="sec-head"><h2>REPOSITORY <em>INDEX</em></h2><span class="tag gr">LIVE FROM THE GITHUB API</span></div>
+  <p class="sec-sub">Every original product, pulled live from GitHub — this list never goes stale. My 93 contribution forks (Ollama, Chroma, Milvus, txtai, OpenMed &amp; more) live on my <a href="https://github.com/rtmalikian?tab=repositories" target="_blank" rel="noopener">GitHub profile</a>.</p>
+  <div class="repo-tools">
+    <input id="repoSearch" type="search" placeholder="🔍 Search my products… e.g. discharge, tesla, fhir">
+    <button class="chipbtn on" data-f="all">All</button>
+    <button class="chipbtn" data-f="clinical">Clinical AI</button>
+    <button class="chipbtn" data-f="tesla">Tesla</button>
+    <button class="chipbtn" data-f="tools">Tools &amp; Other</button>
+  </div>
+  <div id="repoGrid"><p style="color:var(--muted)">Loading live from GitHub…</p></div>
+</div></section>
+
+<!-- ============ RESUME ============ -->
+<section id="resume"><div class="wrap reveal">
+  <div class="sec-head"><h2>RÉSUMÉ <em>SNAPSHOT</em></h2></div>
+  <p class="sec-sub">The short version. The long version is the work itself — it's all public, linked, and verifiable above.</p>
+  <div class="tl">
+    <div class="ev"><div class="yr">NOW — 2025 →</div><h3>Clinical AI Architect · Open-Source Builder</h3><p>Weekly clinical AI product launches with embedded OpenAI-compatible inference gateways; daily contributions to medical AI &amp; vector DB projects (213 PRs opened, 54 merged into external projects); weekly research publication series; daily Tesla AI app series (15+ apps). Volunteer literacy/math tutor, Palmdale City Library; taught a 3-hour community Computer &amp; AI masterclass.</p></div>
+    <div class="ev"><div class="yr">OPERATOR ERA</div><h3>Founder &amp; CEO — Direct Primary Care Clinic</h3><p>Bootstrapped and ran a direct primary care clinic as CEO: operations, team, finances, patient experience. This is where the pain points in my products come from — I lived them.</p></div>
+    <div class="ev"><div class="yr">2015 — 2018</div><h3>Family Medicine Residency — Eastern Virginia Medical School</h3><p>Residency training in family medicine, with a podium presentation on renal-insufficiency prescribing (EVMS 2018).</p></div>
+    <div class="ev"><div class="yr">2013</div><h3>ECFMG Certified</h3><p>ECFMG certification verifying my UCL medical degree for US training and practice pathways.</p></div>
+    <div class="ev"><div class="yr">2011 · 2008</div><h3>UCL — MBBS (2011) · BSc First Class Honours (2008)</h3><p>University College London. Dean's List 2007/08. Published researcher since 2009: knee arthroplasty &amp; simulator work in <i>The Knee</i> (2014), <i>J. Bioengineering &amp; Biomedical Science</i> (2013), JBJS proceedings and ORS.</p></div>
+  </div>
+  <h3 style="font-family:Orbitron;color:#fff;letter-spacing:.08em;margin:26px 0 12px">STACK &amp; SIGNALS</h3>
+  <div class="skills">
+    <span class="skill">Clinical AI architecture</span><span class="skill">OpenAI-compatible platforms</span><span class="skill">LLM evals &amp; safety</span><span class="skill">FHIR R4 / SMART on FHIR</span><span class="skill">RAG &amp; vector databases</span><span class="skill">Python · FastAPI</span><span class="skill">TypeScript</span><span class="skill">Swift / SwiftUI</span><span class="skill">Docker</span><span class="skill">Agentic coding workflows</span><span class="skill">HIPAA-aware self-hosting</span><span class="skill">Healthcare operations</span>
+  </div>
+  <h3 style="font-family:Orbitron;color:#fff;letter-spacing:.08em;margin:26px 0 12px">SELECTED PUBLICATIONS</h3>
+  <p style="color:var(--muted);max-width:900px">Four-station knee simulator study, <i>J Bioengineer &amp; Biomedical Sci</i> 2013 (doi:10.4172/2155-9538.1000125) · Retrieved knee arthroplasty roughening, <i>The Knee</i> 2014 · JBJS Br proceedings 2010/2012 · ORS 2011 poster · PRAS 2009 podium · Plus the 2026 open-source research series: Clinical NLP &amp; De-identification · Medical Imaging · Vector Databases · FHIR Infrastructure (Zenodo / medRxiv).</p>
+</div></section>
+
+<!-- ============ BLOG ============ -->
+<section id="blog"><div class="wrap reveal">
+  <div class="sec-head"><h2>SIGNAL <em>LOG</em> — BLOG &amp; X</h2></div>
+  <p class="sec-sub">Two streams, one page: <b style="color:#fff">Field Notes</b> — balanced reflections on what we're building and contributing, including what didn't land and why — and <b style="color:#fff">From X</b>, my recent posts and threads. Follow <a href="https://x.com/rtmalikian" target="_blank" rel="noopener">@rtmalikian</a> for the live version.</p>
+  <div class="blog-tabs">
+    <button class="chipbtn on" data-blog="notes">📓 Field Notes</button>
+    <button class="chipbtn" data-blog="x">𝕏 From X — @rtmalikian</button>
+    <button class="chipbtn" data-blog="both">Both</button>
+  </div>
+  <div id="notesWrap">
+    <div class="grid3" id="notesGrid"></div>
+  </div>
+  <div id="xWrap" style="display:none;margin-top:8px">
+    <div class="grid3" id="xGrid"></div>
+    <div style="margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px">
+      <h3 style="color:#fff;margin-bottom:8px">Live timeline</h3>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:10px">If the embed loads for you, this is my X timeline in real time. If X blocks it in your browser, the cards above and the button below take you straight there.</p>
+      <a class="btn btn-ghost btn-sm" href="https://x.com/rtmalikian" target="_blank" rel="noopener">Open @rtmalikian on X →</a>
+      <div style="margin-top:14px"><a class="twitter-timeline" data-height="520" data-theme="dark" data-chrome="noheader nofooter transparent" href="https://twitter.com/rtmalikian">Posts by @rtmalikian</a></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact"><div class="wrap reveal">
+  <div class="sec-head"><h2>LET'S <em>BUILD SOMETHING</em></h2></div>
+  <p class="sec-sub" style="font-size:1.08rem;color:#e6defc">I'm open to clinical AI architect roles, collaborations, and good problems. The fastest way to reach me is email — I answer personally. Or grab the card above and keep me in your pocket.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-pink" href="mailto:rtmalikian@gmail.com?subject=Hello%20Raphael%20—%20from%20your%20site">✉ rtmalikian@gmail.com</a>
+    <a class="btn btn-ghost" href="https://github.com/rtmalikian" target="_blank" rel="noopener">🐙 GitHub</a>
+    <a class="btn btn-ghost" href="https://x.com/rtmalikian" target="_blank" rel="noopener">𝕏 @rtmalikian</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/raphael-t-malikian-mbbs-bsc-hons-71075436a/" target="_blank" rel="noopener">💼 LinkedIn</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot-grid">
+  <div><h4>RAPHAEL MALIKIAN</h4><p>Clinical AI Architect · Los Angeles County, CA<br>Healthcare founder/operator building open-source clinical AI infrastructure.</p></div>
+  <div><h4>NAVIGATE</h4><p><a href="#card">Digital business card</a><br><a href="#ventures">Ventures hub</a><br><a href="#repos">Repository index</a><br><a href="#blog">Blog &amp; X</a></p></div>
+  <div><h4>ELSEWHERE</h4><p><a href="https://github.com/rtmalikian" target="_blank" rel="noopener">GitHub — rtmalikian</a><br><a href="https://x.com/rtmalikian" target="_blank" rel="noopener">X — @rtmalikian</a><br><a href="https://www.linkedin.com/in/raphael-t-malikian-mbbs-bsc-hons-71075436a/" target="_blank" rel="noopener">LinkedIn</a><br><a href="mailto:rtmalikian@gmail.com">rtmalikian@gmail.com</a></p></div>
+  <div><h4>THIS SITE</h4><p>Hosted on GitHub Pages from <a href="https://github.com/rtmalikian/rtmalikian.github.io" target="_blank" rel="noopener">rtmalikian/rtmalikian.github.io</a>.<br><a href="privacy.html">Privacy</a> · <a href="tos.html">Terms</a><br>© 2026 Raphael Malikian</p></div>
+</div></footer>
+
+<div class="toast" id="toast">Copied ✦</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+/* ---------- starfield ---------- */
+const cv=document.getElementById('stars'),cx=cv.getContext('2d');let W,H,stars=[];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;stars=Array.from({length:150},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.6+.3,s:Math.random()*.25+.05,hue:Math.random()<.7?'190':'315'}))}
+rs();addEventListener('resize',rs);
+(function loop(){cx.clearRect(0,0,W,H);for(const s of stars){s.y+=s.s;if(s.y>H){s.y=0;s.x=Math.random()*W}cx.beginPath();cx.arc(s.x,s.y,s.r,0,7);cx.fillStyle=`hsla(${s.hue},100%,78%,.85)`;cx.shadowBlur=8;cx.shadowColor='#ff71ce';cx.fill()}cx.shadowBlur=0;requestAnimationFrame(loop)})();
+
+/* ---------- ticker ---------- */
+const tickItems=['DISCHARGE DECODED — SHIPPED','213 PRs OPENED · 54 MERGED EXTERNALLY','WEEKLY CLINICAL AI LAUNCHES','TESLA AI SERIES — ONE APP A DAY','AZAT — ԱԶԱՏ = FREE','OPENAI-COMPATIBLE BY ARCHITECTURE','CLINICAL NLP · VECTOR DBs · FHIR','OPEN TO COLLABORATION'];
+const t=tickItems.map(x=>' ✦ '+x).join('');document.getElementById('tickerTrack').textContent=t+t;
+
+/* ---------- counters ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,end=+el.dataset.count;let cur=0;const step=Math.max(1,Math.round(end/45));const iv=setInterval(()=>{cur+=step;if(cur>=end){cur=end;clearInterval(iv)}el.textContent=cur+(end===20?'+':'')},28);io.unobserve(el)}),{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>io.observe(el));
+const rio=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>rio.observe(el));
+
+/* ---------- business card tilt + QR ---------- */
+const card=document.getElementById('bizcard');
+card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*16}deg) rotateX(${-y*13}deg)`});
+card.addEventListener('mouseleave',()=>card.style.transform='');
+card.addEventListener('click',()=>copyEmail());
+document.querySelectorAll('.qr-tabs button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.qr-tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.getElementById('qrImg').src=b.dataset.qr;document.getElementById('qrCap').textContent=b.dataset.cap}));
+
+/* ---------- contact helpers ---------- */
+function toast(msg){const tEl=document.getElementById('toast');tEl.textContent=msg;tEl.classList.add('show');setTimeout(()=>tEl.classList.remove('show'),2200)}
+function copyEmail(btn){navigator.clipboard?.writeText('rtmalikian@gmail.com').then(()=>toast('✦ Email copied: rtmalikian@gmail.com')).catch(()=>toast('rtmalikian@gmail.com'))}
+function vcardText(){return ['BEGIN:VCARD','VERSION:3.0','FN:Raphael Malikian','TITLE:Clinical AI Architect','ORG:Open Source / Clinical AI','EMAIL:rtmalikian@gmail.com','URL:https://rtmalikian.github.io/','URL:https://github.com/rtmalikian','URL:https://x.com/rtmalikian','URL:https://www.linkedin.com/in/raphael-t-malikian-mbbs-bsc-hons-71075436a/','ADR:;;Los Angeles County;CA;;USA','NOTE:Healthcare founder/operator - bootstrapped and ran a direct primary care clinic as CEO, now building clinical AI. Open to collaboration and clinical AI architect roles.','END:VCARD'].join('\r\n')}
+function downloadVCard(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([vcardText()],{type:'text/vcard'}));a.download='Raphael-Malikian.vcf';a.click();toast('✦ Contact saved — check your downloads')}
+async function shareSite(){const data={title:'Raphael Malikian — Clinical AI Architect',text:'Clinical AI architect & healthcare founder/operator building open-source clinical AI. Portfolio, ventures & blog:',url:'https://rtmalikian.github.io/'};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{navigator.clipboard?.writeText(data.url);toast('✦ Link copied: rtmalikian.github.io')}}
+
+/* ---------- blog: Field Notes (balanced reflections) ---------- */
+const NOTES=[
+ {date:'OCT 21, 2026',tag:'REFLECTION · OPEN SOURCE',mins:'4 MIN',title:'213 pull requests later: what maintainers actually taught me',
+  body:'The honest ledger: 213 PRs opened, 54 merged into external projects, 4 more landed by maintainer cherry-pick — and plenty closed or superseded. The closed ones taught the most. A fix can be correct and still belong in a different layer (one of mine belonged in safetensors, not sentence-transformers — the reviewer was right). A PR can be right and still duplicate work opened two days earlier. I now check timelines before I write a line of code.',
+  quote:'Merged is a maintainer\u2019s decision, not a score. The record I\u2019m proud of is that every number here is public and checkable.'},
+ {date:'OCT 21, 2026',tag:'RESEARCH · PUBLICATIONS',mins:'3 MIN',title:'Turning open-source work into a research series — without inflating it',
+  body:'This week I rendered four papers from the contribution record — clinical NLP, medical imaging, vector databases, FHIR — with the dataset (213 rows) exported alongside. Ground rule I set for myself: maintainer review is real peer scrutiny, but it is not journal publication, and the papers say so plainly. Bold claims are fine. Borrowed prestige is not.',
+  quote:'Every claim tied to its numbers, or it doesn\u2019t ship.'},
+ {date:'OCT 19, 2026',tag:'LAUNCH · CLINICAL AI',mins:'4 MIN',title:'Discharge Decoded: the metric was comprehension, not generation',
+  body:'Most “AI for discharge” demos optimise for producing a summary. The failure in the real workflow is that ~78% of ED discharges show comprehension deficits. So the product gates on it: verified extraction, a Flesch-Kincaid ≤ grade-6 rewrite loop, and automated teach-back with completion tracking. Eval harness in CI: extraction precision/recall 1.0 on the test set, red-flag recall 1.0. If a future change breaks those numbers, the build fails — as it should.',
+  quote:'Not “a chatbot on a form.” A measured improvement over the workflow it replaces.'},
+ {date:'OCT 20, 2026',tag:'TESLA AI SERIES',mins:'3 MIN',title:'Why every app I ship contains its own AI endpoints',
+  body:'Series 2 of the Tesla apps is an architecture argument disguised as car software: each app embeds /v1/chat/completions, /v1/models and /v1/embeddings with a pluggable backend and an offline rules fallback. Day 2 was per-location charge limits — a feature Rivian ships and Tesla doesn\u2019t. Day 3 wired the car into the home itself. The pattern transfers directly to clinics: own the inference surface, keep a deterministic fallback, never let the product die when an API does.',
+  quote:'The AI is part of the platform. Everything else is a dependency.'}
+];
+document.getElementById('notesGrid').innerHTML=NOTES.map(n=>`<article class="post"><div class="meta">${n.date} · ${n.tag} · ${n.mins}</div><h3>${n.title}</h3><p>${n.body}</p><blockquote>${n.quote}</blockquote></article>`).join('');
+
+/* ---------- blog: From X ---------- */
+const XPOSTS=[
+ {date:'RECENT · 𝕏',title:'Shipping in public, daily',body:'Launch threads for each Tesla AI app and each weekly clinical product — what it does, why the gap exists, and the repo link. No vapour, just shipped code.',link:'https://x.com/rtmalikian'},
+ {date:'RECENT · 𝕏',title:'PR reports from the contribution pipeline',body:'Short posts as PRs land in Ollama, Chroma, Milvus, txtai, OpenMed and the wider medical-AI / vector-DB ecosystem — including the ones that get closed, with the reason why.',link:'https://x.com/rtmalikian'},
+ {date:'SUNDAYS · LIVE',title:'Weekly PR Wrap-Up — live on stream',body:'Every Sunday I present the week\u2019s merged PRs live on YouTube + Twitch: what changed, why it matters in the real world, and the health-tech angle. Announcements and replays are posted on X first.',link:'https://x.com/rtmalikian'},
+ {date:'FOLLOW ALONG · 𝕏',title:'Research series & paper drops',body:'As each weekly paper hits Zenodo / medRxiv / Hugging Face, the thread version lands on X — headline finding, the chart that matters, and the dataset link.',link:'https://x.com/rtmalikian'}
+];
+document.getElementById('xGrid').innerHTML=XPOSTS.map(p=>`<article class="xcard"><div class="meta">${p.date}</div><h3 style="color:#fff;margin:8px 0 6px">${p.title}</h3><p>${p.body}</p><div class="links"><a href="${p.link}" target="_blank" rel="noopener">View on X →</a></div></article>`).join('');
+document.querySelectorAll('[data-blog]').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('[data-blog]').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ const v=b.dataset.blog;
+ document.getElementById('notesWrap').style.display=(v==='x')?'none':'block';
+ document.getElementById('xWrap').style.display=(v==='notes')?'none':'block';
+ if(window.twttr&&twttr.widgets)twttr.widgets.load();
+}));
+
+/* ---------- live repos ---------- */
+const FALLBACK=[
+ {name:'discharge-decoded',description:'Discharge Decoded — turn hospital discharge papers into a plain-language care plan. Open-source, self-hostable, embedded OpenAI-compatible gateway.',html_url:'https://github.com/rtmalikian/discharge-decoded',language:'Python',stargazers_count:0,updated_at:'2026-10-19'},
+ {name:'clinical-llm-safety-harness',description:'Clinical LLM safety harness: hallucination detection, citation enforcement, safeguarding escalation.',html_url:'https://github.com/rtmalikian/clinical-llm-safety-harness',language:'Python',stargazers_count:0,updated_at:'2026-10-01'},
+ {name:'tesla-fleet-chat',description:'Chat with your Teslas through any OpenAI client — OpenAI-compatible API server.',html_url:'https://github.com/rtmalikian/tesla-fleet-chat',language:'Python',stargazers_count:0,updated_at:'2026-10-19'},
+ {name:'tesla-home-link',description:'Tesla home automation bridge: ETA-aware thermostat, Hue lights, welcome-home scenes.',html_url:'https://github.com/rtmalikian/tesla-home-link',language:'Python',stargazers_count:0,updated_at:'2026-10-21'},
+ {name:'azat-smokefree',description:'Azat — free evidence-based quit-smoking PWA for Armenia. EN / RU / Armenian.',html_url:'https://github.com/rtmalikian/azat-smokefree',language:'JavaScript',stargazers_count:0,updated_at:'2026-10-13'},
+ {name:'tether',description:'Tether — macOS menu bar app for healthy screen breaks, Pomodoro and AI-usage awareness.',html_url:'https://github.com/rtmalikian/tether',language:'Swift',stargazers_count:0,updated_at:'2026-10-07'}
+];
+let REPOS=[],FILTER='all';
+function cat(r){const n=(r.name+' '+(r.description||'')).toLowerCase();if(n.startsWith('tesla'))return'tesla';if(/clinic|medical|clinical|health|fhir|discharge|claim|medication|cardiovascular|carebridge|azat|smoke|ecg|physionet|cbt|connectmind|diversion/.test(n))return'clinical';return'tools'}
+function render(){const q=(document.getElementById('repoSearch').value||'').toLowerCase();
+ const list=REPOS.filter(r=>(FILTER==='all'||cat(r)===FILTER)&&(r.name.toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q)));
+ document.getElementById('repoGrid').innerHTML=list.length?list.map(r=>`<a class="repo" href="${r.html_url}" target="_blank" rel="noopener"><div class="rn">${r.name}</div><div class="rd">${r.description||'Open-source project by Raphael Malikian.'}</div><div class="rm">${r.language||'—'} · ★ ${r.stargazers_count} · updated ${new Date(r.updated_at).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}</div></a>`).join(''):'<p style="color:var(--muted)">No matches — try another search.</p>'}
+document.getElementById('repoSearch').addEventListener('input',render);
+document.querySelectorAll('[data-f]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-f]').forEach(x=>x.classList.remove('on'));b.classList.add('on');FILTER=b.dataset.f;render()}));
+fetch('https://api.github.com/users/rtmalikian/repos?per_page=100&sort=updated').then(r=>r.json()).then(d=>{REPOS=d.filter(r=>!r.fork&&r.name!=='rtmalikian.github.io');render()}).catch(()=>{REPOS=FALLBACK;render()});
+</script>
+</body>
+</html>

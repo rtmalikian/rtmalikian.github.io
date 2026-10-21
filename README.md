@@ -1,58 +1,25 @@
-markdown
-# Hermes Personal Assistant Bot
+# Raphael Malikian — Clinical AI Architect
 
-**Personal automation tools for career management** — built by Raphael Malikian (@rtmalikian)
+**🌐 Live site: [rtmalikian.github.io](https://rtmalikian.github.io/)** — portfolio, AI ventures hub, digital business card & blog.
 
----
+Healthcare founder/operator — I bootstrapped and ran a direct primary care clinic as CEO, and now I build open-source clinical AI infrastructure to fix the systemic pain points in healthcare. Over 20 years of healthcare domain expertise.
 
-## 📋 About This Repository
+- **134 public repositories** · 41 original products · **213 PRs opened, 54 merged into external projects** (verified Oct 2026)
+- Flagships: [Discharge Decoded](https://github.com/rtmalikian/discharge-decoded) · [Clinical LLM Safety Harness](https://github.com/rtmalikian/clinical-llm-safety-harness) · [Azat](https://github.com/rtmalikian/azat-smokefree) · Tesla AI series (15+ apps)
+- Signature: every flagship embeds its own OpenAI-compatible AI endpoints (`/v1/chat/completions`, `/v1/embeddings`) with pluggable backends + offline fallback
 
-This repository hosts the **legal pages** for my personal automation bot (Hermes), which helps me manage my job search, email correspondence, and professional networking.
+**Contact:** rtmalikian@gmail.com · [GitHub](https://github.com/rtmalikian) · [X @rtmalikian](https://x.com/rtmalikian) · [LinkedIn](https://www.linkedin.com/in/raphael-t-malikian-mbbs-bsc-hons-71075436a/)
 
-### What This Bot Does
+## This repository
 
-- **Gmail Monitoring** — Scans for important emails and generates draft replies
-- **Job Rejection Handler** — Identifies rejection emails and crafts personalized follow-up responses with my resume attached
-- **X (Twitter) Integration** — Optional: posts career updates and job search milestones
+Hosts my GitHub Pages site (`index.html` — cyberpunk / vaporwave portfolio & landing page with a live repository index, Field Notes blog and X hub) plus the legal pages below.
 
-**Important:** This bot runs **only on my personal accounts** and is **not a public service**. All automation is manually triggered or requires my explicit approval before any action is taken.
+## Hermes Personal Assistant Bot — legal pages
 
----
+Personal automation tools for career management, built by Raphael Malikian. This bot runs **only on my personal accounts** and is **not a public service**. All automation is manually triggered or requires my explicit approval.
 
-## 🔗 Quick Links
+- **Privacy Policy:** [rtmalikian.github.io/privacy.html](https://rtmalikian.github.io/privacy.html)
+- **Terms of Service:** [rtmalikian.github.io/tos.html](https://rtmalikian.github.io/tos.html)
+- No data collection from other users · Local-only storage · No selling/sharing of any information
 
-- **Privacy Policy:** [View](https://rtmalikian.github.io/privacy.html)
-- **Terms of Service:** [View](https://rtmalikian.github.io/tos.html)
-- **Project Homepage:** (under development)
-
----
-
-## 🛡️ Privacy & Data
-
-This bot respects your privacy:
-
-- ✅ **No data collection** from other users
-- ✅ **Local-only storage** — all data stays on my machine
-- ✅ **No selling/sharing** of any information
-- ✅ **Manual approval** required for all posts
-- ✅ **Revocable access** — you can disable anytime via X/Twitter settings
-
-See the full [Privacy Policy](https://rtmalikian.github.io/privacy.html) for details.
-
----
-
-## 📧 Contact
-
-**Operator:** Raphael Malikian  
-**Email:** rtmalikian@gmail.com  
-**X/Twitter:** @rtmalikian  
-
----
-
-## ⚖️ License
-
-This project is for **personal use only**. Not open source. Code and automation scripts are private and not available for redistribution.
-
----
-
-*Last updated: April 2026*
+*Site design: single-file HTML/CSS/JS, no build step, no tracking. Repo data on the homepage is fetched live from the public GitHub API.*
