@@ -153,7 +153,7 @@ footer a:hover{color:var(--cyan)}
 <header class="site"><div class="wrap nav">
   <a class="logo" href="#top">RM<span>://</span>NEON</a>
   <nav>
-    <a href="#card">Business Card</a><a href="#start">Get Started</a><a href="#ventures">Ventures</a>
+    <a href="#research">Research</a><a href="#card">Business Card</a><a href="#start">Get Started</a><a href="#ventures">Ventures</a>
     <a href="#repos">Repositories</a><a href="#resume">Résumé</a><a href="#blog">Blog / X</a><a href="#contact">Contact</a>
   </nav>
   <a class="btn btn-pink btn-sm" href="mailto:rtmalikian@gmail.com?subject=Let%27s%20talk%20—%20via%20rtmalikian.github.io">✉ Work with me</a>
@@ -182,6 +182,69 @@ footer a:hover{color:var(--cyan)}
   <p style="color:var(--muted);font-size:.82rem">*Merged into external projects and verified live on GitHub, Oct 21 2026 — every one reviewed by that project's maintainers. Full record in the <a href="#blog">Field Notes</a>.</p>
 </div>
 <div class="ticker"><div id="tickerTrack"></div></div>
+
+
+<!-- ============ RESEARCH ============ -->
+<section id="research" style="padding-top:44px"><div class="wrap reveal in">
+  <div class="sec-head"><h2><em>RESEARCH</em></h2><span class="tag gr">TOP PRIORITY · UPDATED OCT 2026</span></div>
+  <p class="sec-sub">My recent writing, all open access and all checkable: a weekly research series drawn from my open-source clinical AI work, an evidence-led public-health commentary, and a Cochrane-style meta-analysis built in public with an LLM team — me as the accountable human author, every disagreement logged. <b style="color:#fff">Independent research: no industry affiliation, no conflicts of interest.</b></p>
+  <div class="stats" style="margin:0 0 22px">
+    <div class="stat"><div class="n">6</div><div class="l">Works live</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">Zenodo DOIs</div></div>
+    <div class="stat"><div class="n">1,049</div><div class="l">Records screened (meta-analysis)</div></div>
+    <div class="stat"><div class="n">157</div><div class="l">Studies to full text</div></div>
+    <div class="stat"><div class="n">62</div><div class="l">Refs in the 7-OH commentary</div></div>
+  </div>
+  <div class="grid3">
+    <div class="proj" style="grid-column:1/-1;border-color:var(--cyan)">
+      <div class="tags" style="margin:0 0 6px"><span class="tag gr">META-ANALYSIS · IN PROGRESS</span><span class="tag">COCHRANE-STYLE</span><span class="tag pk">BUILT IN PUBLIC</span></div>
+      <h3 style="font-size:1.35rem">Ambient AI Scribes: Time Saved, Work Shifted, Errors Added</h3>
+      <p style="font-size:1rem;color:#ddd6ff">A systematic review and meta-analysis of ambient AI scribes for clinical documentation — effects on documentation time, after-hours work, clinician burnout, note quality and note errors. Health systems are buying these tools at scale on thin evidence; the one prior meta-analysis (Zhao 2025) predates the 2025 randomised trials and pooled note tools in general, not scribes alone. This review pools benefit <i>and</i> error burden together.</p>
+      <p style="margin-top:10px"><b style="color:#fff">Where it stands, honestly:</b> search and screening complete — 1,049 records found (PubMed, Europe PMC, OpenAIRE, ClinicalTrials.gov), 567 after deduplication, dual independent LLM screeners (agreement 0.77, Cohen's κ 0.64) with logged adjudication, <b style="color:#fff">157 studies through to full text</b>; full-text retrieval now underway. <b style="color:var(--yellow)">No pooled result exists yet</b> — and none will be published until extraction is real.</p>
+      <div class="links"><a href="https://github.com/rtmalikian/ambient-ai-scribes-meta-analysis-clinical-documentation-burnout-note-errors" target="_blank" rel="noopener">Follow it live on GitHub →</a></div>
+    </div>
+    <div class="proj" style="grid-column:1/-1">
+      <div class="tags" style="margin:0 0 6px"><span class="tag pk">COMMENTARY · PREPRINT LIVE</span><span class="tag yl">PUBLIC HEALTH</span></div>
+      <h3 style="font-size:1.25rem">When a Warning Advertises: The Boomerang Effect in Anti-Drug Campaigns and the Case of Concentrated 7-Hydroxymitragynine</h3>
+      <p>When does an anti-drug campaign become advertising? An evidence-led commentary on reactance and the boomerang effect — from teenage anti-smoking campaigns and DARE to today's concentrated 7-OH products — balanced against the fear-appeal evidence, with a public-health communication strategy that informs without provoking curiosity. 8,470 words, 62 references. Evidence and policy discussion only; no clinical or medication recommendations.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23559292</span><span class="tag">CC BY 4.0</span><span class="tag gr">Journal route: Int. J. Drug Policy</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23559292" target="_blank" rel="noopener">Read the preprint (DOI) →</a><a href="https://github.com/rtmalikian/boomerang-effect-kratom-7oh" target="_blank" rel="noopener">Full text + PDF on GitHub →</a></div>
+    </div>
+    <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 1</span><span class="tag gr">SUBMITTED</span></div>
+      <h3>Guarding the Clinical Narrative</h3>
+      <p>A practitioner-contributor's retrospective analysis of open-source contributions to clinical NLP and health-data de-identification (2025–2026) — what maintainer review actually caught, and what de-identification code owes patients.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549061</span><span class="tag pk">Methods of Information in Medicine · MS ME26-01-0319</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23549061" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/clinical-nlp-deidentification-open-source" target="_blank" rel="noopener">Paper + data →</a></div>
+    </div>
+    <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 2</span><span class="tag yl">SUBMISSION IN PROGRESS</span></div>
+      <h3>Silent Failures in the Imaging Stack</h3>
+      <p>Open-source contributions to medical imaging software — DICOM geometry, warnings discipline, and pipeline reliability (2025–2026). The bugs that don't crash are the ones that reach patients.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549102</span><span class="tag pk">Route: J. Imaging Informatics in Medicine</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23549102" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/medical-imaging-dicom-open-source-reliability" target="_blank" rel="noopener">Paper + data →</a></div>
+    </div>
+    <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 3</span><span class="tag yl">REROUTING</span></div>
+      <h3>Retrieval Is the New Record System</h3>
+      <p>Open-source contributions to vector databases and embedding infrastructure underpinning clinical AI (2025–2026) — 39 PRs in this domain alone. Desk-rejected on scope at IJMI within an hour; rerouting via transfer, full-length text primary again.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549144</span><span class="tag pk">Dataset: 213 PRs, open CSV</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23549144" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/vector-databases-rag-clinical-ai-infrastructure" target="_blank" rel="noopener">Paper + data →</a></div>
+    </div>
+    <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 4</span><span class="tag gr">SUBMITTED ROUTE</span></div>
+      <h3>The Plumbing Layer</h3>
+      <p>Open-source contributions to FHIR servers, synthetic patient data, and federated research infrastructure (2025–2026) — the unglamorous layer every clinical AI claim quietly depends on.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549199</span><span class="tag pk">Route: Applied Clinical Informatics</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23549199" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/fhir-health-data-infrastructure-open-source" target="_blank" rel="noopener">Paper + data →</a></div>
+    </div>
+    <div class="proj">
+      <div class="ico">📚</div><h3>The earlier record</h3>
+      <p>Peer-reviewed work going back to 2009: the four-station knee simulator study (<i>J Bioengineer &amp; Biomedical Sci</i> 2013), retrieved knee arthroplasty roughening (<i>The Knee</i> 2014), JBJS proceedings, ORS and PRAS presentations.</p>
+      <div class="links"><a href="#resume">See résumé snapshot →</a></div>
+    </div>
+  </div>
+</section>
 
 <!-- ============ BUSINESS CARD ============ -->
 <section id="card"><div class="wrap reveal">
@@ -252,7 +315,7 @@ footer a:hover{color:var(--cyan)}
       <div class="links"><a href="https://rtmalikian.github.io/azat-smokefree" target="_blank" rel="noopener">Try it live →</a><a href="https://github.com/rtmalikian/azat-smokefree" target="_blank" rel="noopener">Repo →</a></div></div>
     <div class="proj"><div class="ico">🔬</div><h3>Weekly Research Series</h3><p>One research article a week from my open-source clinical AI work — standard layout, data tables, figures, real numbers. Four backlog papers shipped Oct 2026 across clinical NLP, medical imaging, vector databases and FHIR infrastructure, headed to Zenodo, medRxiv and no-fee journals.</p>
       <div class="tags"><span class="tag">Publications</span><span class="tag pk">Open access</span></div>
-      <div class="links"><a href="#resume">Publication list →</a><a href="#blog">Read the reflections →</a></div></div>
+      <div class="links"><a href="#research">Publication list →</a><a href="#blog">Read the reflections →</a></div></div>
   </div>
 
   <h3 style="font-family:Orbitron;color:var(--pink2);letter-spacing:.1em;margin:30px 0 12px">◢ TESLA AI SERIES — ONE APP A DAY</h3>

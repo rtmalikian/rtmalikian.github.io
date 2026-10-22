@@ -1,5 +1,8 @@
 /* Blog data for rtmalikian.github.io — auto-updated weekly by the weekly-portfolio-blog-update cron (Sundays, after the PR wrap-up). Newest Field Note first. Edit shape: {date, tag, mins, title, body, quote} / X: {date, title, body, link} */
 window.BLOG_NOTES=[
+ {date:'OCT 22, 2026',tag:'RESEARCH · NEW SECTION',mins:'2 MIN',title:'The research now has a front door',
+  body:'The landing page leads with Research from today: all four papers from the open-source series with their Zenodo DOIs and honest journal status — one submitted, one in progress, one rerouting after a scope rejection, one on the Applied Clinical Informatics route — plus the 7-OH boomerang commentary and the ambient AI scribes meta-analysis. That review is the one I am most careful with: 1,049 records screened down to 157 full texts, and the page says plainly that no pooled result exists yet. It will when the extraction is real, and not before.',
+  quote:'If it is on the page, there is a DOI, a repo, or a number behind it.'},
  {date:'OCT 21, 2026',tag:'REFLECTION · OPEN SOURCE',mins:'4 MIN',title:'213 pull requests later: what maintainers actually taught me',
   body:'The honest ledger: 213 PRs opened, 54 merged into external projects, 4 more landed by maintainer cherry-pick — and plenty closed or superseded. The closed ones taught the most. A fix can be correct and still belong in a different layer (one of mine belonged in safetensors, not sentence-transformers — the reviewer was right). A PR can be right and still duplicate work opened two days earlier. I now check timelines before I write a line of code.',
   quote:'Merged is a maintainer\u2019s decision, not a score. The record I\u2019m proud of is that every number here is public and checkable.'},
