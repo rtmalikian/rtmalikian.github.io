@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raphael Malikian — Clinical AI Architect | Portfolio, Ventures & Digital Business Card</title>
-<meta name="description" content="Raphael Malikian — Clinical AI Architect in Los Angeles. Healthcare founder/operator building open-source clinical AI: 134 repos, 213 PRs, 54 merged into external projects. Portfolio, AI ventures hub, blog and digital business card.">
+<title>Raphael Malikian — Clinical AI Architect | Open-Source Clinical AI, Meta-Analyses, Tesla AI Apps</title>
+<meta name="description" content="Raphael Malikian — Clinical AI Architect in Los Angeles. Healthcare founder/operator building open-source clinical AI: 166 GitHub repos, 225 PRs, 62 merged into external projects, 9 open-access research papers (ambient AI scribes & LLM citation fabrication meta-analyses), 22 Tesla AI apps. Portfolio, AI ventures hub, research, blog and digital business card.">
 <meta property="og:title" content="Raphael Malikian — Clinical AI Architect">
 <meta property="og:description" content="Building infrastructure to fix the systemic pain points in healthcare. Open-source clinical AI, Tesla AI series, research — and how to work with me.">
 <meta property="og:image" content="https://rtmalikian.github.io/assets/og.png">
@@ -101,16 +101,16 @@ section{padding:64px 0 10px}
 .qr-tabs button{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer;font-family:inherit;font-weight:600}
 .qr-tabs button.on{background:linear-gradient(90deg,var(--pink),var(--purple));color:#fff;border-color:transparent}
 /* pathways + cards */
-.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.path,.proj,.post,.xcard{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;backdrop-filter:blur(8px);transition:.2s}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+.path,.proj,.post,.xcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px 16px;backdrop-filter:blur(8px);transition:.2s}
 .path:hover,.proj:hover,.post:hover,.xcard:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:0 14px 38px rgba(0,0,0,.4),0 0 22px rgba(5,217,232,.22)}
-.path .ico,.proj .ico{font-size:1.7rem}
-.path h3,.proj h3,.post h3{color:#fff;margin:8px 0 6px;font-size:1.12rem;line-height:1.3}
-.path p,.proj p,.post p,.xcard p{color:var(--muted);font-size:.95rem}
-.tags{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
-.tag{font-family:'JetBrains Mono',monospace;font-size:.7rem;padding:4px 9px;border-radius:999px;border:1px solid rgba(5,217,232,.4);color:var(--cyan)}
+.path .ico,.proj .ico{font-size:1.3rem}
+.path h3,.proj h3,.post h3{color:#fff;margin:6px 0 4px;font-size:1.02rem;line-height:1.3}
+.path p,.proj p,.post p,.xcard p{color:var(--muted);font-size:.88rem;line-height:1.5}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.tag{font-family:'JetBrains Mono',monospace;font-size:.68rem;padding:3px 8px;border-radius:999px;border:1px solid rgba(5,217,232,.4);color:var(--cyan)}
 .tag.pk{border-color:rgba(255,113,206,.5);color:var(--pink2)} .tag.yl{border-color:rgba(255,251,150,.5);color:var(--yellow)} .tag.gr{border-color:rgba(5,255,161,.45);color:var(--green)}
-.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-weight:600;font-size:.92rem}
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:7px;font-weight:600;font-size:.86rem}
 .links a{text-decoration:none}.links a:hover{text-decoration:underline}
 /* repos */
 .repo-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
@@ -186,7 +186,7 @@ section{padding:40px 0 8px}
   <div class="kicker">Los Angeles County · Open to collaboration &amp; clinical AI architect roles</div>
   <h1 class="glitch">RAPHAEL<br><span class="grad">MALIKIAN</span></h1>
   <div class="role">Clinical AI Architect</div>
-  <p class="lede">Healthcare founder/operator — I bootstrapped and ran a direct primary care clinic as CEO, and now I build <b>open-source clinical AI infrastructure</b> to fix the systemic pain points in healthcare. Over <b>20 years of healthcare domain expertise</b>, shipped as code: products with AI built into the platform itself, not bolted on.</p>
+  <p class="lede">Healthcare founder/operator — I bootstrapped and ran a direct primary care clinic as CEO, and now I build <b>open-source clinical AI infrastructure</b> and publish <b>open-access meta-analyses</b> (ambient AI scribes, LLM citation fabrication) to fix the systemic pain points in healthcare. Over <b>20 years of healthcare domain expertise</b>, shipped as code: products with AI built into the platform itself, not bolted on.</p>
   <div class="hero-ctas">
     <a class="btn btn-pink" href="#start">🚀 Get started with me</a>
     <a class="btn btn-ghost" href="#ventures">🌆 Explore my ventures</a>
@@ -194,75 +194,96 @@ section{padding:40px 0 8px}
     <button class="btn btn-ghost" onclick="copyEmail(this)">📋 Copy email</button>
   </div>
   <div class="stats">
-    <div class="stat"><div class="n" data-count="134">0</div><div class="l">Public repositories</div></div>
-    <div class="stat"><div class="n" data-count="41">0</div><div class="l">Original products shipped</div></div>
-    <div class="stat"><div class="n" data-count="218">0</div><div class="l">PRs opened upstream</div></div>
-    <div class="stat"><div class="n" data-count="56">0</div><div class="l">PRs merged externally*</div></div>
+    <div class="stat"><div class="n" data-count="166">0</div><div class="l">Public repositories</div></div>
+    <div class="stat"><div class="n" data-count="71">0</div><div class="l">Original (non-fork) repos</div></div>
+    <div class="stat"><div class="n" data-count="225">0</div><div class="l">PRs opened upstream</div></div>
+    <div class="stat"><div class="n" data-count="62">0</div><div class="l">PRs merged externally*</div></div>
     <div class="stat"><div class="n" data-count="20">0</div><div class="l">Years in healthcare</div></div>
   </div>
-  <p style="color:var(--muted);font-size:.82rem">*Merged into external projects and verified live on GitHub, Oct 21 2026 — every one reviewed by that project's maintainers. Full record in the <a href="#blog">Field Notes</a>.</p>
+  <p style="color:var(--muted);font-size:.82rem">*Merged into external projects, verified live on GitHub Oct 30 2026 — every one reviewed by that project's maintainers. Full record in the <a href="#blog">Field Notes</a>.</p>
 </div>
 <div class="ticker"><div id="tickerTrack"></div></div>
 
 
 <!-- ============ RESEARCH ============ -->
 <section id="research" style="padding-top:44px"><div class="wrap reveal in">
-  <div class="sec-head"><h2><em>RESEARCH</em></h2><span class="tag gr">TOP PRIORITY · UPDATED OCT 2026</span></div>
-  <p class="sec-sub">My recent writing, all open access and all checkable: a weekly research series drawn from my open-source clinical AI work, an evidence-led public-health commentary, and a Cochrane-style meta-analysis built in public with an LLM team — me as the accountable human author, every disagreement logged. <b style="color:#fff">Independent research: no industry affiliation, no conflicts of interest.</b></p>
+  <div class="sec-head"><h2><em>RESEARCH</em></h2><span class="tag gr">9 WORKS · UPDATED OCT 2026</span></div>
+  <p class="sec-sub">Open-access clinical AI research from an independent researcher: two Cochrane-style systematic reviews &amp; meta-analyses, two evidence commentaries, and a five-paper open-source research series. Every work is a free Zenodo preprint (CC BY 4.0) with open data. Topics: ambient AI scribes, LLM hallucination &amp; fabricated citations, clinical NLP de-identification, FHIR interoperability, vector databases &amp; RAG, medical imaging reliability, direct primary care outcomes. <b style="color:#fff">No industry affiliation, no conflicts of interest.</b></p>
   <div class="stats" style="margin:0 0 22px">
-    <div class="stat"><div class="n">6</div><div class="l">Works live</div></div>
-    <div class="stat"><div class="n">6</div><div class="l">Zenodo DOIs</div></div>
-    <div class="stat"><div class="n">1,049</div><div class="l">Records screened (meta-analysis)</div></div>
-    <div class="stat"><div class="n">157</div><div class="l">Studies to full text</div></div>
-    <div class="stat"><div class="n">62</div><div class="l">Refs in the 7-OH commentary</div></div>
+    <div class="stat"><div class="n">9</div><div class="l">Works live</div></div>
+    <div class="stat"><div class="n">9</div><div class="l">Zenodo DOIs</div></div>
+    <div class="stat"><div class="n">1,049</div><div class="l">Records screened (Review 1)</div></div>
+    <div class="stat"><div class="n">74</div><div class="l">Studies included (Review 1)</div></div>
+    <div class="stat"><div class="n">19.4%</div><div class="l">Pooled fabricated citations (Review 2)</div></div>
   </div>
   <div class="grid3">
     <div class="proj" style="grid-column:1/-1;border-color:var(--cyan)">
-      <div class="tags" style="margin:0 0 6px"><span class="tag gr">META-ANALYSIS · COMPLETE · SUBMITTED</span><span class="tag">COCHRANE-STYLE</span><span class="tag pk">BUILT IN PUBLIC</span></div>
-      <h3 style="font-size:1.35rem">Ambient AI Scribes: Time Saved, Work Shifted, Errors Added</h3>
-      <p style="font-size:1rem;color:#ddd6ff">A systematic review and meta-analysis of ambient AI scribes for clinical documentation — effects on documentation time, after-hours work, clinician burnout, note quality and note errors. Health systems are buying these tools at scale on thin evidence; the one prior meta-analysis (Zhao 2025) predates the 2025 randomised trials and pooled note tools in general, not scribes alone. This review pools benefit <i>and</i> error burden together.</p>
-      <p style="margin-top:10px"><b style="color:#fff">Where it stands, honestly:</b> review complete — 1,049 records found (PubMed, Europe PMC, OpenAIRE, ClinicalTrials.gov), 567 after deduplication, dual independent LLM screeners (agreement 0.77, Cohen's κ 0.64) with logged adjudication, 157 reports sought, 83 assessed, <b style="color:#fff">74 studies included</b>. Pooled documentation time fell about a fifth (percentage change -18.9%, low certainty); work-exhaustion benefit rests on two randomised trials (moderate certainty for that estimate); AI drafts carry a real error load, so clinician review stays part of the intervention. <b style="color:#fff">Submitted to the Journal of Clinical Epidemiology; preprint DOI 10.5281/zenodo.23565499.</b></p>
-      <div class="links"><a href="https://doi.org/10.5281/zenodo.23565499" target="_blank" rel="noopener">Read the preprint (DOI) →</a><a href="https://github.com/rtmalikian/ambient-ai-scribes-meta-analysis-clinical-documentation-burnout-note-errors" target="_blank" rel="noopener">Follow it live on GitHub →</a></div>
+      <div class="tags" style="margin:0 0 6px"><span class="tag gr">META-ANALYSIS · SUBMITTED — J CLINICAL EPIDEMIOLOGY</span><span class="tag">COCHRANE-STYLE</span><span class="tag pk">BUILT IN PUBLIC</span></div>
+      <h3 style="font-size:1.15rem">Ambient AI Scribes Meta-Analysis — Documentation Time, Burnout &amp; Note Errors</h3>
+      <p>Systematic review &amp; meta-analysis of ambient AI scribes (AI medical scribes) for clinical documentation: <b style="color:#fff">1,049 records screened, 74 studies included</b>. Pooled documentation time fell <b style="color:#fff">18.9%</b> (low certainty) — and the AI note-error burden is pooled alongside the benefit, so clinician review stays part of the intervention. Submitted to the <i>Journal of Clinical Epidemiology</i>.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23565499</span><span class="tag gr">CC BY 4.0</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23565499" target="_blank" rel="noopener">Read the preprint →</a><a href="https://github.com/rtmalikian/ambient-ai-scribes-meta-analysis-clinical-documentation-burnout-note-errors" target="_blank" rel="noopener">GitHub →</a></div>
     </div>
-    <div class="proj" style="grid-column:1/-1">
-      <div class="tags" style="margin:0 0 6px"><span class="tag pk">COMMENTARY · PREPRINT LIVE</span><span class="tag yl">PUBLIC HEALTH</span></div>
-      <h3 style="font-size:1.25rem">When a Warning Advertises: The Boomerang Effect in Anti-Drug Campaigns and the Case of Concentrated 7-Hydroxymitragynine</h3>
-      <p>When does an anti-drug campaign become advertising? An evidence-led commentary on reactance and the boomerang effect — from teenage anti-smoking campaigns and DARE to today's concentrated 7-OH products — balanced against the fear-appeal evidence, with a public-health communication strategy that informs without provoking curiosity. 8,470 words, 62 references. Evidence and policy discussion only; no clinical or medication recommendations.</p>
-      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23559292</span><span class="tag">CC BY 4.0</span><span class="tag gr">Journal route: Int. J. Drug Policy</span></div>
-      <div class="links"><a href="https://doi.org/10.5281/zenodo.23559292" target="_blank" rel="noopener">Read the preprint (DOI) →</a><a href="https://github.com/rtmalikian/boomerang-effect-kratom-7oh" target="_blank" rel="noopener">Full text + PDF on GitHub →</a></div>
+    <div class="proj" style="grid-column:1/-1;border-color:var(--purple)">
+      <div class="tags" style="margin:0 0 6px"><span class="tag gr">META-ANALYSIS · JOURNAL SUBMISSION IN PREPARATION</span><span class="tag">LLM HALLUCINATION</span><span class="tag pk">CITATION ACCURACY</span></div>
+      <h3 style="font-size:1.15rem">LLM Citation Fabrication — How Often AI Models Invent References</h3>
+      <p>Systematic review of large language model citation accuracy in biomedical writing: <b style="color:#fff">63 studies, 148 model arms</b>. Pooled <b style="color:#fff">19.4% of LLM citations were fabricated</b> and only 37.0% fully accurate; retrieval grounding (RAG) cut fabrication to 5.8% vs 31.0% without. The reference-checking evidence base for clinical AI safety.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23585717</span><span class="tag gr">CC BY 4.0</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23585717" target="_blank" rel="noopener">Read the preprint →</a></div>
     </div>
     <div class="proj">
-      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 1</span><span class="tag gr">SUBMITTED</span></div>
+      <div class="tags" style="margin:0 0 6px"><span class="tag pk">COMMENTARY</span><span class="tag gr">SUBMITTED — HEALTHCARE</span></div>
+      <h3>Direct Primary Care Outcomes: 83% Growth, 38 Papers</h3>
+      <p>DPC outcomes commentary: direct primary care grew 83% on an evidence base of just 38 outcomes papers — the outcomes accounting the DPC model owes patients and payers. <i>Healthcare</i> MS HJDSI-D-26-00372; DPC Summit 2027 session proposed.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23562906</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23562906" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/direct-primary-care-outcomes-evidence-gap" target="_blank" rel="noopener">GitHub →</a></div>
+    </div>
+    <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag pk">COMMENTARY</span><span class="tag yl">PREPRINT LIVE · JOURNAL SUBMISSION IN PROGRESS</span></div>
+      <h3>When a Warning Advertises — 7-OH &amp; the Boomerang Effect</h3>
+      <p>Public-health communication commentary: anti-drug warnings can advertise the drug (boomerang / reactance effect), applied to concentrated 7-hydroxymitragynine (7-OH) products. Evidence &amp; policy only — no clinical recommendations. 62 references.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23562669</span><span class="tag gr">CC BY 4.0</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23562669" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/boomerang-effect-kratom-7oh" target="_blank" rel="noopener">GitHub →</a></div>
+    </div>
+    <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag">SERIES PAPER 1</span><span class="tag gr">SUBMITTED — METHODS OF INFORMATION IN MEDICINE</span></div>
       <h3>Guarding the Clinical Narrative</h3>
-      <p>A practitioner-contributor's retrospective analysis of open-source contributions to clinical NLP and health-data de-identification (2025–2026) — what maintainer review actually caught, and what de-identification code owes patients.</p>
-      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549061</span><span class="tag pk">Methods of Information in Medicine · MS ME26-01-0319</span></div>
+      <p>Clinical NLP &amp; health-data de-identification: retrospective analysis of open-source contributions to clinical natural language processing and HIPAA de-identification (2025–2026).</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549061</span></div>
       <div class="links"><a href="https://doi.org/10.5281/zenodo.23549061" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/clinical-nlp-deidentification-open-source" target="_blank" rel="noopener">Paper + data →</a></div>
     </div>
     <div class="proj">
-      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 2</span><span class="tag yl">SUBMISSION IN PROGRESS</span></div>
+      <div class="tags" style="margin:0 0 6px"><span class="tag">SERIES PAPER 2</span><span class="tag gr">SUBMITTED — ACADEMIC RADIOLOGY</span></div>
       <h3>Silent Failures in the Imaging Stack</h3>
-      <p>Open-source contributions to medical imaging software — DICOM geometry, warnings discipline, and pipeline reliability (2025–2026). The bugs that don't crash are the ones that reach patients.</p>
-      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549102</span><span class="tag pk">Route: J. Imaging Informatics in Medicine</span></div>
+      <p>Medical imaging AI reliability: DICOM geometry, warnings discipline and silent pipeline failures in open-source medical imaging software (2025–2026). MS ARAD-S-26-05599.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549102</span></div>
       <div class="links"><a href="https://doi.org/10.5281/zenodo.23549102" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/medical-imaging-dicom-open-source-reliability" target="_blank" rel="noopener">Paper + data →</a></div>
     </div>
     <div class="proj">
-      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 3</span><span class="tag yl">REROUTING</span></div>
+      <div class="tags" style="margin:0 0 6px"><span class="tag">SERIES PAPER 3</span><span class="tag gr">SUBMITTED — J BIOMEDICAL INFORMATICS</span></div>
       <h3>Retrieval Is the New Record System</h3>
-      <p>Open-source contributions to vector databases and embedding infrastructure underpinning clinical AI (2025–2026) — 39 PRs in this domain alone. Desk-rejected on scope at IJMI within an hour; rerouting via transfer, full-length text primary again.</p>
-      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549144</span><span class="tag pk">Dataset: 213 PRs, open CSV</span></div>
+      <p>Vector databases &amp; embedding infrastructure for clinical AI and RAG: retrospective analysis of open-source contributions (2025–2026), 39 PRs in this domain alone. MS JBI-26-4036.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549144</span></div>
       <div class="links"><a href="https://doi.org/10.5281/zenodo.23549144" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/vector-databases-rag-clinical-ai-infrastructure" target="_blank" rel="noopener">Paper + data →</a></div>
     </div>
     <div class="proj">
-      <div class="tags" style="margin:0 0 6px"><span class="tag">RESEARCH ARTICLE 4</span><span class="tag gr">SUBMITTED ROUTE</span></div>
+      <div class="tags" style="margin:0 0 6px"><span class="tag">SERIES PAPER 4</span><span class="tag yl">SUBMISSION IN PREPARATION — APPLIED CLINICAL INFORMATICS</span></div>
       <h3>The Plumbing Layer</h3>
-      <p>Open-source contributions to FHIR servers, synthetic patient data, and federated research infrastructure (2025–2026) — the unglamorous layer every clinical AI claim quietly depends on.</p>
-      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549199</span><span class="tag pk">Route: Applied Clinical Informatics</span></div>
+      <p>FHIR interoperability infrastructure: open-source FHIR servers, synthetic patient data and federated research infrastructure — the layer every clinical AI claim depends on (2025–2026).</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23549199</span></div>
       <div class="links"><a href="https://doi.org/10.5281/zenodo.23549199" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/fhir-health-data-infrastructure-open-source" target="_blank" rel="noopener">Paper + data →</a></div>
     </div>
     <div class="proj">
+      <div class="tags" style="margin:0 0 6px"><span class="tag">SERIES PAPER 5 · NEW OCT 28</span><span class="tag gr">SUBMITTED — COMPUTER METHODS &amp; PROGRAMS IN BIOMEDICINE</span></div>
+      <h3>When Agent Plumbing Fails Quietly</h3>
+      <p>LLM tooling &amp; AI agent infrastructure: retrospective analysis of open-source contributions to agent frameworks — the quiet failures that break AI pipelines downstream. MS CMPB-D-26-08971; FOSDEM 2027 talk proposed.</p>
+      <div class="tags"><span class="tag">DOI 10.5281/zenodo.23741622</span></div>
+      <div class="links"><a href="https://doi.org/10.5281/zenodo.23741622" target="_blank" rel="noopener">Preprint →</a><a href="https://github.com/rtmalikian/llm-tooling-agent-infra-quiet-failures" target="_blank" rel="noopener">Paper + data →</a></div>
+    </div>
+    <div class="proj">
       <div class="ico">📚</div><h3>The earlier record</h3>
-      <p>Peer-reviewed work going back to 2009: the four-station knee simulator study (<i>J Bioengineer &amp; Biomedical Sci</i> 2013), retrieved knee arthroplasty roughening (<i>The Knee</i> 2014), JBJS proceedings, ORS and PRAS presentations.</p>
-      <div class="links"><a href="#resume">See résumé snapshot →</a></div>
+      <p>Peer-reviewed since 2009: four-station knee simulator study (<i>J Bioengineer &amp; Biomedical Sci</i> 2013), knee arthroplasty roughening (<i>The Knee</i> 2014), JBJS proceedings, ORS &amp; PRAS presentations.</p>
+      <div class="links"><a href="#resume">Résumé snapshot →</a></div>
     </div>
   </div>
 </div></section>
@@ -283,7 +304,7 @@ section{padding:40px 0 8px}
       <div class="qr-tabs">
         <button class="on" data-qr="assets/qr-vcard.png" data-cap="Scan to save my contact — name, email, GitHub, X &amp; LinkedIn in one tap.">📇 Contact</button>
         <button data-qr="assets/qr-site.png" data-cap="Scan to open this hub — portfolio, ventures, blog and repos.">🌐 This site</button>
-        <button data-qr="assets/qr-github.png" data-cap="Scan to open my GitHub — 134 public repositories.">🐙 GitHub</button>
+        <button data-qr="assets/qr-github.png" data-cap="Scan to open my GitHub — 166 public repositories.">🐙 GitHub</button>
       </div>
       <img id="qrImg" src="assets/qr-vcard.png" alt="QR code">
       <p id="qrCap">Scan to save my contact — name, email, GitHub, X &amp; LinkedIn in one tap.</p>
@@ -322,38 +343,103 @@ section{padding:40px 0 8px}
     <div class="proj"><div class="ico">📄➜💬</div><h3>Discharge Decoded</h3><p>Photograph discharge papers → a plain-language care plan: med schedule, red flags, follow-up checklist. Verified extraction (unverified meds are flagged, never presented as fact), a 6th-grade readability gate, and automated teach-back. Week 1 flagship, shipped Oct 19 2026.</p>
       <div class="tags"><span class="tag">Python</span><span class="tag pk">OpenAI-compatible</span><span class="tag gr">Eval harness in CI</span></div>
       <div class="links"><a href="https://github.com/rtmalikian/discharge-decoded" target="_blank" rel="noopener">Repo →</a></div></div>
-    <div class="proj"><div class="ico">🛡️</div><h3>Clinical LLM Safety Harness</h3><p>Evaluation &amp; safety harness for clinical LLMs: hallucination detection, citation enforcement, and immediate human-in-the-loop escalation — the guardrails layer healthcare AI is missing.</p>
+    <div class="proj"><div class="ico">🛡️</div><h3>Clinical LLM Safety Harness</h3><p>LLM evaluation &amp; safety harness for clinical AI: hallucination detection, citation verification, human-in-the-loop escalation — the guardrails layer safe healthcare LLMs are missing.</p>
       <div class="tags"><span class="tag">Python</span><span class="tag pk">LLM evals</span><span class="tag yl">Safety</span></div>
       <div class="links"><a href="https://github.com/rtmalikian/clinical-llm-safety-harness" target="_blank" rel="noopener">Repo →</a></div></div>
-    <div class="proj"><div class="ico">🏥</div><h3>AI Medical Clinic + Workflow Skills</h3><p>Agentic medical-office automation: EHR/FHIR utilities, SMART on FHIR workflow skills, and an embedded inference gateway for scheduling, intake and admin — built for small clinics, not just enterprises.</p>
+    <div class="proj"><div class="ico">🏥</div><h3>AI Medical Clinic + Workflow Skills</h3><p>Agentic medical-office automation: EHR/FHIR R4 utilities, SMART on FHIR workflow skills, embedded inference gateway for scheduling, intake &amp; admin in small clinics.</p>
       <div class="tags"><span class="tag">FHIR R4</span><span class="tag pk">Agents</span><span class="tag gr">Self-hostable</span></div>
       <div class="links"><a href="https://github.com/rtmalikian/ai-medical-clinic" target="_blank" rel="noopener">Clinic →</a><a href="https://github.com/rtmalikian/medical-clinic-ai-workflow-skills" target="_blank" rel="noopener">Skills →</a></div></div>
-    <div class="proj"><div class="ico">🧾</div><h3>ClaimGuard AI</h3><p>Insurance-denial intelligence: predicts denial risk, identifies the cause from the letter, and drafts the appeal — distilled from a Qwen model trained with 10,000 synthetic denial/appeal pairs, human-in-the-loop throughout.</p>
+    <div class="proj"><div class="ico">🧾</div><h3>ClaimGuard AI</h3><p>Insurance denial management AI: predicts denial risk, finds the cause in the denial letter, drafts the appeal — LLM distilled from 10,000 synthetic denial/appeal pairs, human-in-the-loop.</p>
       <div class="tags"><span class="tag">LLM distillation</span><span class="tag pk">Revenue cycle</span></div>
       <div class="links"><a href="https://github.com/rtmalikian/claimguard-ai-denial-appeals-llm-distillation" target="_blank" rel="noopener">Repo →</a></div></div>
     <div class="proj"><div class="ico">🚭</div><h3>Azat — Quit Smoking, Without Shame</h3><p>Ազատ means “free.” An evidence-based, shame-free quit-smoking PWA in English, Russian and casual Eastern Armenian. No login, no data leaves the phone — built for the Armenian diaspora, designed against fear/shame “boomerang” effects.</p>
       <div class="tags"><span class="tag">PWA</span><span class="tag yl">EN · RU · ՀԱՅ</span><span class="tag gr">Live demo</span></div>
       <div class="links"><a href="https://rtmalikian.github.io/azat-smokefree" target="_blank" rel="noopener">Try it live →</a><a href="https://github.com/rtmalikian/azat-smokefree" target="_blank" rel="noopener">Repo →</a></div></div>
-    <div class="proj"><div class="ico">🔬</div><h3>Weekly Research Series</h3><p>One research article a week from my open-source clinical AI work — standard layout, data tables, figures, real numbers. Four backlog papers shipped Oct 2026 across clinical NLP, medical imaging, vector databases and FHIR infrastructure, headed to Zenodo, medRxiv and no-fee journals.</p>
+    <div class="proj"><div class="ico">🔬</div><h3>Weekly Research Series</h3><p>Nine open-access papers (Oct 2026): two Cochrane-style meta-analyses (ambient AI scribes; LLM citation fabrication), two commentaries (direct primary care outcomes; 7-OH boomerang effect) and a five-paper open-source series — clinical NLP, medical imaging, vector databases, FHIR, LLM agent infrastructure. Zenodo DOIs, CC BY 4.0.</p>
       <div class="tags"><span class="tag">Publications</span><span class="tag pk">Open access</span></div>
       <div class="links"><a href="#research">Publication list →</a><a href="#blog">Read the reflections →</a></div></div>
   </div>
 
-  <h3 style="font-family:Orbitron;color:var(--pink2);letter-spacing:.1em;margin:30px 0 12px">◢ TESLA AI SERIES — ONE APP A DAY</h3>
+  <h3 style="font-family:Orbitron;color:var(--pink2);letter-spacing:.1em;margin:30px 0 12px">◢ TESLA AI SERIES — 22 APPS SHIPPED · ONE A DAY (OCT 2026)</h3>
+  <p class="sec-sub" style="margin-bottom:16px">22 open-source Tesla apps shipped Oct 8–29, 2026. <b style="color:#fff">Series 2 (12 apps) embed OpenAI-compatible AI endpoints</b> (<span style="font-family:'JetBrains Mono',monospace;color:var(--cyan)">/v1/chat/completions · /v1/embeddings</span>), a pluggable LLM backend and a deterministic offline fallback — each with a live demo. Series 1 (10 apps) are deterministic Tesla Fleet API automations.</p>
   <div class="grid3">
-    <div class="proj"><div class="ico">🚗💬</div><h3>Tesla Fleet Chat</h3><p>Talk to your cars from any OpenAI client. Ask “which car has more battery?” or execute allowlisted commands — my Fleet API work exposed through the same AI-endpoint architecture.</p>
-      <div class="links"><a href="https://github.com/rtmalikian/tesla-fleet-chat" target="_blank" rel="noopener">Repo →</a></div></div>
-    <div class="proj"><div class="ico">📍🔋</div><h3>Location Charge Limits + Home Link</h3><p>Per-place charge limits (home 80%, cabin 90% — the Rivian feature Tesla lacks) and a car↔home bridge: ETA-aware thermostat and lights as you approach. Two of 15+ Tesla apps shipped, one per day.</p>
-      <div class="links"><a href="https://github.com/rtmalikian/tesla-location-charge-limits" target="_blank" rel="noopener">Limits →</a><a href="https://github.com/rtmalikian/tesla-home-link" target="_blank" rel="noopener">Home Link →</a></div></div>
-    <div class="proj"><div class="ico">🧘</div><h3>Tether</h3><p>macOS menu-bar app for evidence-informed screen wellness: 20-20-20 break overlays, movement breaks, Pomodoro, and privacy-first AI-usage awareness — “sees when, never what you type.”</p>
+    <div class="proj"><div class="ico">💗</div><h3>Tesla Girlfriend Mode</h3><p>Passenger comfort profiles for Tesla: weather-chosen climate &amp; seat heating for the passenger seat, freeway window override, Spotify mix on activation — chat-activated AI endpoint with on-device learning. Bonus build, Oct 29.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-girlfriend-mode" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-girlfriend-mode/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🗓️</div><h3>Tesla Climate Concierge</h3><p>LLM calendar parsing for Tesla preconditioning: free-text events (“early flight, leave 5ish”) become structured departure plans with weather-aware cabin preconditioning and Cabin Overheat Protection re-arm.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-climate-concierge" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-climate-concierge/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🧭</div><h3>Tesla Trip Brain</h3><p>Tesla trip-readiness planner: calendar + battery state of charge + destination weather → required departure charge and preconditioning plan. The LLM explains; the rules engine computes.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-trip-brain" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-trip-brain/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🔮</div><h3>Tesla Drain Forecaster</h3><p>Phantom drain <i>prediction</i> for parked Teslas: learns each car's overnight vampire-drain pattern, predicts tonight's loss and the likely culprit, with chat Q&amp;A and embedding search over past nights.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-drain-forecaster" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-drain-forecaster/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🔋</div><h3>Tesla Battery Guru</h3><p>Tesla battery health analytics: degradation and usable-capacity estimates from charging-session data, charging-habit scoring, and an AI coach endpoint grounded in your computed battery stats.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-battery-guru" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-battery-guru/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🧾</div><h3>Tesla Charge Ledger</h3><p>Free Tesla charging-cost ledger: every session priced against real time-of-use (TOU) electricity rates, monthly reports, CSV export, and natural-language cost Q&amp;A via its AI endpoint.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-charge-ledger" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-charge-ledger/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🛡️</div><h3>Tesla Family Guard</h3><p>Watch-only Tesla teen-driver safety monitor: speeding, geofence and curfew alerts, plus a weekly AI driving report card per driver. Never commands the car.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-family-guard" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-family-guard/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🌧️</div><h3>Tesla Rain Guard</h3><p>Automatic Tesla window closing before rain: weather radar at the parked car's location closes vented windows via the Fleet API; the AI endpoint explains every decision from its log.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-rain-guard" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-rain-guard/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🛣️</div><h3>Tesla Mileage Ledger</h3><p>IRS-ready Tesla mileage log from exact odometer data — no $60–120/yr GPS app: automatic trip classification, business-mileage deduction math, CSV/HTML exports, AI trip-purpose suggestions.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-mileage-ledger" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-mileage-ledger/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">🏠</div><h3>Tesla Home Link</h3><p>Tesla-to-smart-home automation: ETA-aware thermostat pre-heating/cooling (Nest, Ecobee, Home Assistant) and Hue lights on approach, with a chat endpoint that explains the trigger log.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-home-link" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-home-link/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">📍</div><h3>Tesla Location Charge Limits</h3><p>Geofenced per-location Tesla charge limits (home 80%, cabin 90%) — the Rivian feature Tesla lacks — set once per arrival, with natural-language charging rules via AI endpoint.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-location-charge-limits" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-location-charge-limits/" target="_blank" rel="noopener">Live demo →</a></div></div>
+    <div class="proj"><div class="ico">💬</div><h3>Tesla Fleet Chat</h3><p>Chat with your Teslas from any OpenAI client: ask “which car has more battery?” or run allowlist-validated Fleet API commands. OpenAI-compatible endpoints, offline rules fallback.</p>
+      <div class="tags"><span class="tag pk">AI ENDPOINTS</span><span class="tag gr">LIVE DEMO</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-fleet-chat" target="_blank" rel="noopener">Repo →</a><a href="https://rtmalikian.github.io/tesla-fleet-chat/" target="_blank" rel="noopener">Live demo →</a></div></div>
+  </div>
+  <h3 style="font-family:Orbitron;color:var(--cyan);letter-spacing:.1em;margin:26px 0 12px">◢ TESLA SERIES 1 — FLEET API AUTOMATIONS</h3>
+  <div class="grid3">
+    <div class="proj"><div class="ico">⚡</div><h3>Tesla Charge Coordinator</h3><p>Multi-Tesla home charging coordination: priority queue so only one car charges at a time, off-peak windows, automatic handoff. Pre-series standalone, Oct 8.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-charge-coordinator" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">📅</div><h3>Tesla Calendar Climate</h3><p>Calendar-aware Tesla preconditioning: reads your iCal, preconditions the cabin with weather-aware lead times, re-arms Cabin Overheat Protection before its 12-hour cutoff.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-calendar-climate" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🌙</div><h3>Tesla Sentry Scheduler</h3><p>Sentry Mode on a real schedule (default 22:00–06:00): cuts overnight phantom drain without losing nighttime security.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-sentry-scheduler" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🕵️</div><h3>Tesla Drain Detective</h3><p>Overnight vampire-drain alerts that name the culprit — Sentry, climate keeper or Cabin Overheat Protection — from no-wake reads only.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-drain-detective" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🌡️</div><h3>Tesla COP Sentinel</h3><p>Keeps Cabin Overheat Protection alive past Tesla's 12-hour cutoff in parked heat by re-arming it automatically (COP = cabin overheat, not police).</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-cop-sentinel" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🅿️</div><h3>Tesla Valet Auto-Arm</h3><p>Geofenced Valet Mode auto-arm at car washes, service centers and valet stands, with instant owner alerts.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-valet-autoarm" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🐶</div><h3>Tesla Dog Mode Guardian</h3><p>Backup Dog Mode safety alerts to a second contact if cabin temperature drifts or battery falls low. Alert-only, never a life-support replacement.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-dogmode-guardian" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">✨</div><h3>Tesla GlareGuard</h3><p>One-tap anti-glare mirror deflection: computes exact mirror angles from seat position and driver height to steer headlight glare below the eyes; auto-restores in 60s.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-glareguard" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">⏸️</div><h3>Tesla Peak Pause</h3><p>Time-of-use peak charging pause: stops charging at peak start (e.g. SCE 4–9pm) and resumes off-peak — the end time Tesla's own scheduler lacks.</p>
+      <div class="tags"><span class="tag">FLEET API</span></div>
+      <div class="links"><a href="https://github.com/rtmalikian/tesla-peak-pause" target="_blank" rel="noopener">Repo →</a></div></div>
+    <div class="proj"><div class="ico">🧘</div><h3>Tether (macOS)</h3><p>Evidence-informed screen-wellness menu-bar app for macOS: 20-20-20 break overlays, movement breaks, Pomodoro, privacy-first AI-usage awareness — “sees when, never what you type.”</p>
+      <div class="tags"><span class="tag">MACOS · SWIFTUI</span></div>
       <div class="links"><a href="https://github.com/rtmalikian/tether" target="_blank" rel="noopener">Repo →</a></div></div>
   </div>
 </div></section>
 
+
 <!-- ============ REPOS ============ -->
 <section id="repos"><div class="wrap reveal">
   <div class="sec-head"><h2>REPOSITORY <em>INDEX</em></h2><span class="tag gr">LIVE FROM THE GITHUB API</span></div>
-  <p class="sec-sub">Every original product, pulled live from GitHub — this list never goes stale. My 93 contribution forks (Ollama, Chroma, Milvus, txtai, OpenMed &amp; more) live on my <a href="https://github.com/rtmalikian?tab=repositories" target="_blank" rel="noopener">GitHub profile</a>.</p>
+  <p class="sec-sub">Every original product, pulled live from GitHub — this list never goes stale. My 95 contribution forks (Ollama, Chroma, Milvus, txtai, OpenMed &amp; more) live on my <a href="https://github.com/rtmalikian?tab=repositories" target="_blank" rel="noopener">GitHub profile</a>.</p>
   <div class="repo-tools">
     <input id="repoSearch" type="search" placeholder="🔍 Search my products… e.g. discharge, tesla, fhir">
     <button class="chipbtn on" data-f="all">All</button>
@@ -369,7 +455,7 @@ section{padding:40px 0 8px}
   <div class="sec-head"><h2>RÉSUMÉ <em>SNAPSHOT</em></h2></div>
   <p class="sec-sub">The short version. The long version is the work itself — it's all public, linked, and verifiable above.</p>
   <div class="tl">
-    <div class="ev"><div class="yr">NOW — 2025 →</div><h3>Clinical AI Architect · Open-Source Builder</h3><p>Weekly clinical AI product launches with embedded OpenAI-compatible inference gateways; daily contributions to medical AI &amp; vector DB projects (213 PRs opened, 54 merged into external projects); weekly research publication series; daily Tesla AI app series (15+ apps). Volunteer literacy/math tutor, Palmdale City Library; taught a 3-hour community Computer &amp; AI masterclass.</p></div>
+    <div class="ev"><div class="yr">NOW — 2025 →</div><h3>Clinical AI Architect · Open-Source Builder</h3><p>Weekly clinical AI product launches with embedded OpenAI-compatible inference gateways; daily contributions to medical AI &amp; vector DB projects (225 PRs opened, 62 merged into external projects); nine open-access research papers in Oct 2026 (two meta-analyses, two commentaries, five-paper series); 22 Tesla AI apps shipped in a daily series. Volunteer literacy/math tutor, Palmdale City Library; taught a 3-hour community Computer &amp; AI masterclass.</p></div>
     <div class="ev"><div class="yr">OPERATOR ERA</div><h3>Founder &amp; CEO — Direct Primary Care Clinic</h3><p>Bootstrapped and ran a direct primary care clinic as CEO: operations, team, finances, patient experience. This is where the pain points in my products come from — I lived them.</p></div>
     <div class="ev"><div class="yr">2015 — 2018</div><h3>Family Medicine Residency — Eastern Virginia Medical School</h3><p>Residency training in family medicine, with a podium presentation on renal-insufficiency prescribing (EVMS 2018).</p></div>
     <div class="ev"><div class="yr">2013</div><h3>ECFMG Certified</h3><p>ECFMG certification verifying my UCL medical degree for US training and practice pathways.</p></div>
@@ -380,7 +466,7 @@ section{padding:40px 0 8px}
     <span class="skill">Clinical AI architecture</span><span class="skill">OpenAI-compatible platforms</span><span class="skill">LLM evals &amp; safety</span><span class="skill">FHIR R4 / SMART on FHIR</span><span class="skill">RAG &amp; vector databases</span><span class="skill">Python · FastAPI</span><span class="skill">TypeScript</span><span class="skill">Swift / SwiftUI</span><span class="skill">Docker</span><span class="skill">Agentic coding workflows</span><span class="skill">HIPAA-aware self-hosting</span><span class="skill">Healthcare operations</span>
   </div>
   <h3 style="font-family:Orbitron;color:#fff;letter-spacing:.08em;margin:26px 0 12px">SELECTED PUBLICATIONS</h3>
-  <p style="color:var(--muted);max-width:900px">Four-station knee simulator study, <i>J Bioengineer &amp; Biomedical Sci</i> 2013 (doi:10.4172/2155-9538.1000125) · Retrieved knee arthroplasty roughening, <i>The Knee</i> 2014 · JBJS Br proceedings 2010/2012 · ORS 2011 poster · PRAS 2009 podium · Plus the 2026 open-source research series: Clinical NLP &amp; De-identification · Medical Imaging · Vector Databases · FHIR Infrastructure (Zenodo / medRxiv).</p>
+  <p style="color:var(--muted);max-width:900px">2026: Ambient AI scribes meta-analysis (submitted, <i>J Clinical Epidemiology</i>) · LLM citation fabrication meta-analysis · Direct primary care outcomes commentary (submitted, <i>Healthcare</i>) · Five-paper open-source series: Clinical NLP &amp; De-identification · Medical Imaging · Vector Databases · FHIR Infrastructure · LLM Agent Infrastructure (all Zenodo, CC BY 4.0) · Four-station knee simulator study, <i>J Bioengineer &amp; Biomedical Sci</i> 2013 · Retrieved knee arthroplasty roughening, <i>The Knee</i> 2014 · JBJS Br proceedings 2010/2012 · ORS 2011 · PRAS 2009.</p>
 </div></section>
 
 <!-- ============ BLOG ============ -->
